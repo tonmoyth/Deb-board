@@ -39,12 +39,17 @@ for(const completedBtn of completedBtns){
         const div = document.createElement('div');
 
         const date  = new Date();
-        const hours = date.getHours();
+        let hours = parseInt(date.getHours());
+        if(hours === 0){
+            hours =  12;
+        }else if(hours > 12){
+            hours -= 12;
+        }
         const minute = date.getMinutes();
         const second = date.getSeconds();
         
         div.innerHTML =`
-        <p class="p-4 bg-[#F4F7FF] mb-2">You have complete the ${h2} ${hours}:${minute}:${second} </p> 
+        <p class="p-4 bg-[#F4F7FF] mb-2">You have complete the ${h2} ${hours}:${minute}:${second} AM </p> 
         `
         titleTime.appendChild(div);
         event.target.setAttribute('disabled','true');
