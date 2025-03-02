@@ -61,7 +61,7 @@ document.getElementById('let-btn').addEventListener('click',function(){
 
 // Discover Something New Today!
 document.getElementById('discover').addEventListener('click',function(){
-    window.location.href="../question.html"
+    window.location.href="question/index.html"
 });
 
 
