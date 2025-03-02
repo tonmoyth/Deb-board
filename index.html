@@ -49,8 +49,9 @@
         </nav>
     </header>
     <main class="flex w-11/12 gap-5 mx-auto mt-4 ">
-        <div class="basis-2/3  rounded-lg">
-            <!-- Task Assigned -->
+        <!-- Task Assigned -->
+        <div class="flex-1  rounded-lg">
+            
             <div class="flex gap-3 p-4 bg-base-100">
                 <div class="flex-1  gap-x-3 p-5 flex items-center bg-[#F4F7FF] rounded-xl"> 
                     <img class="w-6 h-6" src="assets/checkbox.png" alt="">
@@ -59,7 +60,7 @@
                         <span id="task-number" class="font-bold text-xl">06</span>
                     </div>
                 </div>
-                <div class="discover py-2 px-4 shrink-0 flex gap-x-3 items-center bg-[#F4F7FF] rounded-xl">
+                <div id="discover" class="discover py-2 px-4 shrink-0 flex gap-x-3 items-center bg-[#F4F7FF] rounded-xl">
                     <img class="w-12 h-12" src="assets/board.png" alt="">
                     <p class="text-lg text-white">Discover Something New Today!</p>
                 </div>
@@ -68,15 +69,16 @@
                     <p id="current-zone" class="font-bold">Wed Jul 28 2025</span> </p>
                 </div>
             </div>
+            <div class="border"></div>
             <!-- card contain -->
              <div class="grid grid-cols-3 gap-3 p-4 bg-base-100">
                 <div class="card p-4 bg-[#F4F7FF] rounded-lg space-y-2">
-                    <span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">ShopEase</span>
+                    <div><span class="p-2 bg-base-100 rounded-lg">ShopEase</span></div>
                     <h2 id="first-title" class="font-bold">Fix Mobile Button Issue </h2>
                     <p class="bg-base-100 p-1 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
 
                     <div class="button-box flex items-center justify-between">
-                        <div class="">
+                        <div>
                             <span>Deadline</span>
                             <h3>21 March 2025</h3>
                         </div>
@@ -85,12 +87,12 @@
                 </div>
 
                 <div class="card p-4 bg-[#F4F7FF] rounded-lg space-y-2">
-                    <span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">CloudSync</span>
+                    <div><span class="p-2 bg-base-100 rounded-lg">ShopEase</span></div>
                     <h2 class="font-bold">Add Dark Mode </h2>
                     <p class="bg-base-100 p-1 rounded-lg">Store the user's preference in localStorage, update CSS</p>
 
                     <div class="flex items-center justify-between">
-                        <div class="">
+                        <div>
                             <span>Deadline</span>
                             <h3>1 March 2025</h3>
                         </div>
@@ -99,7 +101,7 @@
                 </div>
 
                 <div class="card p-4 bg-[#F4F7FF] rounded-lg space-y-2">
-                    <span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">SwiftPay</span>
+                    <div><span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">SwiftPay</span></div>
                     <h2 class="font-bold">Optimize  Home page </h2>
                     <p class="bg-base-100 p-1 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
 
@@ -113,7 +115,7 @@
                 </div>
 
                 <div class="card p-4 bg-[#F4F7FF] rounded-lg space-y-2">
-                    <span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">Meta</span>
+                    <div><span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">Meta</span></div>
                     <h2 class="font-bold">Add new emoji 🤲</h2>
                     <p class="bg-base-100 p-1 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
 
@@ -127,7 +129,7 @@
                 </div>
 
                 <div class="card p-4 bg-[#F4F7FF] rounded-lg space-y-2">
-                    <span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">Google LLC</span>
+                    <div><span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">Google LLC</span></div>
                     <h2 class="font-bold">Integrate OpenAI API </h2>
                     <p class="bg-base-100 p-1 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
 
@@ -141,7 +143,7 @@
                 </div>
 
                 <div class="card p-4 bg-[#F4F7FF] rounded-lg space-y-2">
-                    <span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">Glassdoar</span>
+                    <div><span class="p-2 rounded-xl bg-base-100 rounded-lg>ShopEase</span> ">Glassdoar</span></div>
                     <h2 class="font-bold">Improve Job searching</h2>
                     <p class="bg-base-100 p-1 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
 
@@ -156,7 +158,8 @@
              </div>
 
         </div>
-        <div class="basis-1/3 bg-base-100 rounded-lg p-12 space-y-2 ">
+        <!-- activity Log -->
+        <div class="w-[300px] bg-base-100 rounded-lg py-8 px-3 space-y-2 ">
             <div class="flex gap-x-3 justify-center items-center"> 
                 <img src="assets/activity.png" alt="">
                 <p class="font-bold">Activity Log</p>
@@ -165,6 +168,7 @@
             <div class="text-center">
                 <button id="let-btn" class="btn bg-[#3752FD] text-white">Clear History</button>
             </div>
+            <div class="border"></div>
             <!-- title and time -->
             <div id="title-time">
 

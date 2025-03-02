@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question</title>
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="poppins-font bg-[#F4F7FF] py-8">
+    <header>
+        <nav class="w-11/12 mx-auto mb-4">
+            <div class="navbar bg-base-100 p-4 rounded-xl">
+                <div class="flex-1">
+                  <img src="assets/logo.png" alt="">
+                  <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                
+                <button id="back-btn" class="btn bg-[#3752FD] text-white">Back to Desk</button>
+              </div>
+        </nav>
+        <h3 class="text-center text-xl font-bold mb-4">Blog</h3>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <div  class="collapse-open bg-base-100 border-base-300 border rounded-lg mb-4">
+            
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="border mb-3"></div>
+            <div class="collapse-content text-sm pr-7">
+                1.getElementById()
+                2.getElementsByTagName()
+                3.getElementsByClassName()
+                4.querySelector()
+                5.querySelectorAll()
+            </div>
+          </div>
+
+          <div  class="collapse-open bg-base-100 border-base-300 border rounded-lg mb-4">
+            
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="border mb-3"></div>
+            <div class="collapse-content text-sm pr-7">
+                innerHTML হলো : যা HTML সহ সেট করে বা রিটার্ন করে।
+                innerText হলো : যা  কোন এলিমেন্টের মধ্যে থাকা text কে সেট বা রিটার্ন করে।
+                textContent হলো : কোন এলিমেন্ট ডিসপ্লে নান থাকা সত্তেও তার মধ্যে থাকা text কে রিটার্ন করে এবং সেট করে
+            </div>
+          </div>
+
+          <div  class="collapse-open bg-base-100 border-base-300 border rounded-lg mb-4">
+            
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="border mb-3"></div>
+            <div class="collapse-content text-sm pr-7">
+                Event delegation হলো: Event delegation এমন একটি কৌশল যার মাধ্যমে পেরেন্ট এর মধ্যে Event Listener দিয়ে তার Child গুলোর মধ্যে Event পরিচালনা করা যায়
+            </div>
+          </div>
+
+          <div  class="collapse-open bg-base-100 border-base-300 border rounded-lg mb-4">
+            
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+            <div class="border mb-3"></div>
+            <div class="collapse-content text-sm pr-7">
+                Event bubbling : Event bubbling মুলত বিতর থেকে বাহিরের দিকে যায় বা উপরের দিকে উঠে অর্থাৎ কোন ইউজার যদি কোন বাটন এ ক্লিক করে তখন ব্রাউজার বুজতে পারে কোথাও ক্লিক কারা হয়েছে, যে স্থানে ক্লিক করা হয়েছে ঔ স্থানে ট্রিগার হয় তারপর সে স্থান বা সে বাটন এর পেরেন্ট এর কাছে যায় সেখানে কোন addEventListener থাকলে তাকেও ট্রিগার করে তার পর তারও পেরেন্ট এর কাছে যায় ওইখানে Event থাকলে ওইটাকেও ট্রিগার করে এইভাবে Document পর্যন্ত যায়।
+            </div>
+          </div>
+
+          <div  class="collapse-open bg-base-100 border-base-300 border rounded-lg mb-4">
+            
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="border mb-3"></div>
+            <div class="collapse-content text-sm pr-7">
+              element create: document.createElement('element name') jar maddome nuton element toiry kora jay
+              element add : apand() , apandChild() (jar maddobe element ar modde onno akti element add kora jay)
+              element remove : removeChild() (jar maddome kono element theke kono child k remove kora ba mose fela jay)
+            </div>
+          </div>
+    </main>
+    <script src="js/question.js"></script>
+</body>
+</html>

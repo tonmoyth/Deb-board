@@ -1,9 +1,16 @@
+// random background color
 const themeButton = document.getElementById('theme-btn');
 themeButton.addEventListener('click',function(){
     const randomNumber = Math.floor(Math.random()*16777215);
     const randomColor = "#" + randomNumber.toString(16);
     document.getElementById('body').style.backgroundColor = randomColor;
-})
+});
+
+// current date
+const d = new Date();
+const date = d.toDateString();
+const currentZone = document.getElementById('current-zone').innerText = date;
+
 // completed button
 const completedBtns = document.querySelectorAll('.completed-button');
 for(const completedBtn of completedBtns){
@@ -15,6 +22,9 @@ for(const completedBtn of completedBtns){
         const updatedNumber = currentNumber - 1;
         taskNumber.innerText = updatedNumber;
 
+        if(taskNumber.innerText == 0){
+            alert('congrates!!! You have completed all the current task')
+        }
 
         const devBoardNumber = document.getElementById('dev-board-number');
         const currentDevNumber = parseInt(devBoardNumber.innerText);
@@ -41,10 +51,17 @@ for(const completedBtn of completedBtns){
         event.target.classList.add('bg-gray-300');
         
     })
-}
+};
 
 document.getElementById('let-btn').addEventListener('click',function(){
     const titleTime = document.getElementById('title-time');
     const child = titleTime.querySelector('div');
     titleTime.removeChild(child);
-})
+});
+
+// Discover Something New Today!
+document.getElementById('discover').addEventListener('click',function(){
+    window.location.href="../question.html"
+});
+
+
